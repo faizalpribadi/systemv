@@ -29,4 +29,4 @@ Usage
 
 * `systemctl start systemv.socket`
 
-* `check systemv is already running & loaded with this command [ systemctl | grep systemv ]`
+* `check systemv is already running & loaded with this command [systemctl | grep systemv]`

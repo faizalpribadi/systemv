@@ -23,15 +23,18 @@
 ***/
 
 /**
- * Expose headers
+ * Expose main headers
  */
 #include "sys/socket.h"
 #include "sys/un.h"
+#include "stdio.h"
 #include "stdlib.h"
 #include "string.h"
+
+/**
+ *Expose source headers
+ */
 #include "src/systemd/sd-daemon.h"
-#include "stdio.h"
-#include "src/systemd/sd-daemon.c"
 #include "systemv.h"
 
 /**
@@ -94,5 +97,6 @@ int main() {
 			exit(1);
 	}
 }
+
 
 

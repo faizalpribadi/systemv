@@ -1,15 +1,21 @@
-systemv
+SYSTEMV
 =======
 
 Create simply service daemon on systemd
 
 
-Dependencies
-============
+What's is Systemd ?
+===================
 
-* `Linux OS`
+`systemd` is a system and service manager for Linux, compatible with SysV and LSB init scripts. `systemd` provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, supports snapshotting and restoring of the system state, maintains mount and automount points and implements an elaborate transactional dependency-based service control logic. It can work as a drop-in replacement for sysvinit
 
-* `systemd already installed`
+
+Dependencies Requirements
+=========================
+
+* `Linux OS 64-bit`
+
+* `systemd libraries is already installed`
 
 
 Installation
@@ -17,7 +23,7 @@ Installation
 
 * `$ git clone https://github.com/faizalpribadi/systemv.git`
 
-* `$ ./systemv`
+* `$ cd systemv && ./configure`
 
 
 Usage 

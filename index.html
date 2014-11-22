@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Systemv by faizalpribadi</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Systemv</h1>
+        <h2>Create simply service daemon on systemd</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/faizalpribadi/systemv/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/faizalpribadi/systemv/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/faizalpribadi/systemv" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="systemv" class="anchor" href="#systemv" aria-hidden="true"><span class="octicon octicon-link"></span></a>SYSTEMV</h1>
+
+<p>Create simply service daemon on systemd</p>
+
+<h1>
+<a id="whats-is-systemd-" class="anchor" href="#whats-is-systemd-" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's is Systemd ?</h1>
+
+<p><code>systemd</code> is a system and service manager for Linux, compatible with SysV and LSB init scripts. <code>systemd</code> provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, supports snapshotting and restoring of the system state, maintains mount and automount points and implements an elaborate transactional dependency-based service control logic. It can work as a drop-in replacement for sysvinit</p>
+
+<h1>
+<a id="dependencies-requirements" class="anchor" href="#dependencies-requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies Requirements</h1>
+
+<ul>
+<li><p><code>Linux OS 64-bit</code></p></li>
+<li><p><code>systemd libraries is already installed</code></p></li>
+</ul>
+
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<ul>
+<li><p><code>$ git clone https://github.com/faizalpribadi/systemv.git</code></p></li>
+<li><p><code>$ cd systemv &amp;&amp; ./configure</code></p></li>
+</ul>
+
+<h1>
+<a id="usage-" class="anchor" href="#usage-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage </h1>
+
+<ul>
+<li><p><code>copy files of {systemv.socket,systemv.service} to /etc/systemd/system</code></p></li>
+<li><p><code>systemctl enable systemv.socket</code></p></li>
+<li><p><code>systemctl start systemv.socket</code></p></li>
+<li><p><code>check systemv is already running &amp; loaded with this command [systemctl | grep systemv]</code></p></li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>

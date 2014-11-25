@@ -3,13 +3,15 @@
 
 AC_PREREQ([2.69])
 AC_INIT([systemv], [1.0], [faizal_pribadi@aol.com])
+AM_INIT_AUTOMAKE([-Wall foreign])
 AC_CONFIG_SRCDIR([src/systemv.h])
-AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
 AC_PROG_CC
 
 # Checks for libraries.
+SYSTEMD_REQUIRED_VERSION=2.1.7
+PKG_CHECK_MODULES(SYSTEMD, systemd-2.1.7 >= $SYSTEMD_REQUIRED_VERSION)
 
 # Checks for header files.
 AC_CHECK_HEADERS([fcntl.h inttypes.h stdlib.h unistd.h])
@@ -22,10 +24,10 @@ AC_TYPE_UINT16_T
 # Checks for library functions.
 AC_CHECK_FUNCS([memset socket strtoul])
 
-AC_CONFIG_FILES([Makefile
-                 docs/Makefile
+AC_CONFIG_FILES([docs/Makefile
                  examples/Makefile
                  man/Makefile
                  scripts/Makefile
                  src/Makefile])
+
 AC_OUTPUT

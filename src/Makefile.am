@@ -1,6 +1,6 @@
-CFLAGS = --pedantic -Wall -std=c99 -O2
-LDFLAGS =
+AM_CFLAGS = ---Wall -std=c99 -O2
+AM_LDFLAGS =
 
-BINARY_SYSTEMV = systemv
-TARGET_SYSTEMV_SOURCES = systemv.c systemv.h
+bin_PROGRAMS = systemv
+systemv_SOURCES = systemv.c systemv.h
 

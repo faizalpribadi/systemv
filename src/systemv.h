@@ -25,6 +25,14 @@
 #ifndef SYSTEMV_H_
 #define SYSTEMV_H_
 
+#define SYSTEMV_IN_SYSTEMD 1
+/* Defined GNU-C version */
+#if __GNUC__ > 3 || \
+    (__GNUC__ == 3 && (__GNUC_MINOR__ > 2 || \
+                       (__GNUC_MINOR__ == 2 && \
+                        __GNUC_PATCHLEVEL__ > 0)))
+
+#undef SYSTEMV_IN_SYSTEMD 
 
 
 #endif /* SYSTEMV_H_ */
